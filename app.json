@@ -1,24 +1,39 @@
 {
   "expo": {
-    "name": "BoardmateBill",
+    "name": "Bobet BoarderBillApp",
     "slug": "BoardmateBill",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Boardmate_Icon.jpg",
     "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/Boardmate_Icon.jpg",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+        "foregroundImage": "./assets/Boardmate_Icon.jpg",
+        "backgroundColor": "#E6F4FE"
+      },
+      "package": "com.theboydev.BoardmateBill"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "@react-native-community/datetimepicker",
+      "expo-sharing",
+      "expo-document-picker"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7f1f166d-b0e4-4693-aa22-738f66306ee8"
+      }
     }
   }
 }
